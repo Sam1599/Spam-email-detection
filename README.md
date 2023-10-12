@@ -1,14 +1,11 @@
 # Spam-email-detection-with-feedback-loop
-Hi! This project focuses on the detection of spam emails through the development of a machine learning model. 
+Hi! This project focuses on the detection of spam emails through the development of various machine learning models. 
 With the increasing issue of inbox clutter caused by unwanted emails, the goal is to efficiently classify these spam emails automatically.
 
-The project involves a comprehensive analysis of various machine learning algorithms, with the Naive Bayes model achieving the highest accuracy among them.
+The project involves a comprehensive analysis of various machine learning algorithms, with SVM model achieving the highest accuracy among them.
 
-Furthermore, the scope of the project extends to real-time email classification by integrating it with a personal Gmail account. 
-This integration allows for user feedback, creating a feedback loop that seeks user validation for classifying emails as spam or legitimate (ham). 
-The feedback collected from users is then used to continually improve the model, aiming for consistently accurate predictions.
+Furthermore, the project's scope extends to the implementation of real-time email classification within a personal Gmail account by using the 'imapclient' library to connect to a Gmail IMAP server and retrieve email data from the Gmail account. 
 
+Often, valid emails are erroneously marked as spam and end up in the junk folder, causing communication issues. I have observed instances where individuals miss critical deadlines, important event dates, or essential links due to this.
 
-
-
-
+This integration allows the model to continuously receive user feedback and correctly categorize legitimate emails, moving them to the inbox folder. Users manually provide feedback by identifying important emails within the junk folder as valid. The model iteratively learns from these real-time feedback loops, with the goal of consistently making accurate predictions.
